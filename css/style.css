@@ -37,4 +37,5 @@ section {
 #one { background-color: blue; }
 #two { background-color: red; }
 #three { background-color: green; }
-#four { background-color:  purple; }
+#four { background-color:  purple; transition: all 0.4s linear;}
+.is-active {background-color: #222222 !important;}
