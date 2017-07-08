@@ -1,41 +1,48 @@
-/* Make the body 100% of the browser viewport height */
-html, body {
-    height: 100%;
-    margin: 0;
+.top-text {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  z-index: 1;
+  color: white;
 }
 
-h1 {
-    padding: 20% 0 0 0;
-    margin: 0;
-    text-align: center;
-    font-size: 20px;
+.shown {
+  opacity: 1;
+  transition: all 0.4s linear;
 }
 
-p {
-    text-align: center;
-    color: transparentize(white, 0.5);
+.not-shown {
+  opacity: 0;
+  transition: all 0.4s linear;
 }
 
-strong {
-    color: #fff;
-}
- 
 /* Make each section 100% of the browser viewport height */
 section {
     height: 100vh;
     color: white;
-    position: relative;
-    text-align: center;
 }
   /* Center the content of the sections */
-  section .inner {
-      margin: 0 auto;
-      max-width: 85%;
+  section .center-content {
+    padding: 25vh 0vw 25vh 15vw;
+    align-items: center;
+    justify-content: center
   }
+
+.logo {
+  height: 164px;
+}
+
+.transition {
+  transition: all 0.5s linear;
+}
  
 /* Background colors for each section */
-#one { background-color: blue; }
-#two { background-color: red; }
-#three { background-color: green; }
-#four { background-color:  purple; transition: all 0.4s linear;}
+#one { background-color: #6666ff; }
+#two { background-color: #ff3232; }
+#three { background-color: #44aaaa; }
+#four { background-color:  #005900; }
+#five { background-color: #ffffff; }
+#six { background-color: #993299; }
 .is-active {background-color: #222222 !important;}
+
+/* #993299 - purple */

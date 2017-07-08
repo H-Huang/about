@@ -28,8 +28,29 @@ $(document).ready(function() {
     console.log(wh);
 
     new ScrollMagic.Scene({
-        offset: wh*3 - 1
+        offset: -1,
+        duration: wh
     })
-    .setClassToggle("#four", "is-active")
+    .setClassToggle("#first", "not-shown")
+    .addTo(ctrl);
+
+    new ScrollMagic.Scene({
+        offset: wh - 1,
+        duration: wh
+    })
+    .setClassToggle("#first", "shown")
+    .addTo(ctrl);
+
+    new ScrollMagic.Scene({
+        offset: 2*wh - 1,
+        duration: wh
+    })
+    .setClassToggle("#second", "shown")
+    .addTo(ctrl);
+
+    new ScrollMagic.Scene({
+        offset: 5*wh - 1
+    })
+    .setClassToggle("#six", "is-active")
     .addTo(ctrl);
 });
