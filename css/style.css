@@ -16,12 +16,24 @@
 }
 
 .skills-header {
+  opacity: 0;
   font-size: 24px;
   margin-bottom: 5vh;
 }
 
 .skills-text {
   opacity: 0;
+}
+
+.final-skill {
+  font-size: 20px;
+  color: red;
+}
+
+.external-links {
+  color: orange;
+  font-style: normal;
+  font-size: 22px;
 }
 
 /* Make each section 100% of the browser viewport height */

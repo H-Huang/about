@@ -39,13 +39,13 @@ $(document).ready(function() {
     console.log(wh);
 
     // set all skills
-    var offset_vals = [.05*wh,         .35*wh,         .65*wh,         
+    var offset_vals = [.05*wh,         .05*wh,         .35*wh,         .65*wh,         
                        .8*wh,          1.3*wh,        
                        1.5*wh,         1.8*wh,         2.05*wh,    2.15*wh,        2.2*wh,          2.25*wh,       
                        2.8*wh,         2.95*wh,        3.1*wh,     
                        3.8*wh,         3.9*wh,         4.05*wh,
                        4.9*wh];
-    var identifiers = ["#first-skill", "#second-skill", "#third-skill", 
+    var identifiers = ["#skills-header-text", "#first-skill", "#second-skill", "#third-skill", 
                        "#fourth-skill", "#fifth-skill", 
                        "#sixth-skill", "#seventh-skill", "#seventh-skill", "#eighth-skill", "#ninth-skill", "#tenth-skill", 
                        "#eleven-skill", "#twelve-skill", "#thirteen-skill", 
