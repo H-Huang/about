@@ -1,15 +1,17 @@
 .top-text {
   margin: 2vh 2vw;
-  padding: 0px;
   position: fixed;
   z-index: 1;
   color: white;
   opacity: 0;
-  font-size: 20px;
+  font-size: 16px;
+  font-style: italic;
+
+  border-bottom: 3px double;
 }
 
 .skills {
-  margin-left: 65vw;
+  margin-left: 70vw;
   z-index: 1;
   position: fixed;
   color: white;
@@ -61,7 +63,7 @@ section {
 }
   /* Center the content of the sections */
   section .center-content {
-    padding: 25vh 35vw 25vh 15vw;
+    padding: 25vh 35vw 30vh 15vw;
     align-items: center;
     justify-content: center
   }
