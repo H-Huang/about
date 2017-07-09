@@ -24,6 +24,7 @@ $(document).ready(function() {
         new ScrollMagic.Scene({
             triggerElement: this
         })
+        .setPin(this)
         .addTo(ctrl);
     });
 
