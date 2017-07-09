@@ -1,19 +1,27 @@
 .top-text {
-  margin: 0px;
+  margin: 2vh 2vw;
   padding: 0px;
   position: fixed;
   z-index: 1;
   color: white;
-}
-
-.shown {
-  opacity: 1;
-  transition: all 0.4s linear;
-}
-
-.not-shown {
   opacity: 0;
-  transition: all 0.4s linear;
+  font-size: 18px;
+}
+
+.skills {
+  margin-left: 65vw;
+  z-index: 1;
+  position: fixed;
+  color: white;
+}
+
+.skills-header {
+  font-size: 24px;
+  margin-bottom: 5vh;
+}
+
+.skills-text {
+  opacity: 0;
 }
 
 /* Make each section 100% of the browser viewport height */
@@ -23,7 +31,7 @@ section {
 }
   /* Center the content of the sections */
   section .center-content {
-    padding: 25vh 0vw 25vh 15vw;
+    padding: 25vh 35vw 25vh 15vw;
     align-items: center;
     justify-content: center
   }
@@ -38,10 +46,10 @@ section {
  
 /* Background colors for each section */
 #one { background-color: #6666ff; }
-#two { background-color: #ff3232; }
-#three { background-color: #44aaaa; }
+#two { background-color: #44aaaa; }
+#three { background-color: #ff6666; }
 #four { background-color:  #005900; }
-#five { background-color: #ffffff; }
+#five { background-color: #12af36; }
 #six { background-color: #993299; }
 .is-active {background-color: #222222 !important;}
 

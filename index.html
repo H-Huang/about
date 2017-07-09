@@ -5,32 +5,56 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <link href="css/style.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
     </head>
 	<body>
-        <div id="first" class="not-shown"><p class="top-text">What I've done</p></div>
-        <div id="second" class="not-shown"><p class="top-text">What I'm doing</p></div>
-        <div id="third" class="not-shown"><p class="top-text">How to reach me</p></div>
+        <div class="headers">
+            <p id="first-header" class="top-text animated">Who I am</p>
+            <p id="second-header" class="top-text animated">What I've done</p>
+            <p id="third-header" class="top-text animated">What I'm doing</p>
+            <p id="fourth-header" class="top-text animated">How to reach me</p>
+        </div>
+        <div class="skills">
+            <h1 class="skills-header">Things I've learned along the way</h1>
+            <p id="first-skill" class="skills-text animated">C</p>
+            <p id="second-skill" class="skills-text animated">C++</p>
+            <p id="third-skill" class="skills-text animated">Java</p>
+            <p id="fourth-skill" class="skills-text animated">Python</p>
+            <p id="fifth-skill" class="skills-text animated">Django / Flask</p>
+            <p id="sixth-skill" class="skills-text animated">HTML / CSS</p>
+            <p id="seventh-skill" class="skills-text animated">Javascript</p>
+            <p id="eighth-skill" class="skills-text animated">PHP</p>
+            <p id="ninth-skill" class="skills-text animated">Project Management</p>
+            <p id="tenth-skill" class="skills-text animated">DevOps</p>
+            <p id="eleven-skill" class="skills-text animated">C#</p>
+            <p id="twelve-skill" class="skills-text animated">Databases</p>
+            <p id="thirteen-skill" class="skills-text animated">Distributed Systems</p>
+            <p id="fourteen-skill" class="skills-text animated">Machine Learning</p>
+            <p id="fifteen-skill" class="skills-text animated">Data Mining</p>
+            <p id="sixteen-skill" class="skills-text animated">Natural Language Processing</p>
+            <p id="seventeen-skill" class="skills-text animated">Among others...</p>
+        </div>
         <section id="one" class="transition">
             <div class="center-content">
-                <img class="logo" src="img/UCLA.png">
-                <h1 class="position-text">Hi, I'm Howard</h1>
-                <p class="description-text">Currently a senior CS student at UCLA. Here's a quick rundown to learn more about me!</p>
+                <img class="logo animated fadeIn" src="img/UCLA.png">
+                <h1 class="position-text animated fadeInUp">Hi, I'm Howard</h1>
+                <p class="description-text animated fadeInUp">Currently a senior CS student at UCLA. Here's a 20 second rundown to learn more about me!</p>
             </div>
         </section>
         <section id="two" class="transition">
             <div class="center-content">
-                <img class="logo" src="img/db-logo.png">
-                <h1 class="position-text">Daily Bruin: Director</h1>
-                <p class="description-text">Managed the Daily Bruin Online Department (50+ members)</p>
+                <img class="logo" src="img/cloud_raxak.png">
+                <h1 class="position-text">Cloud Raxak: Software Engineering Intern</h1>
+                <p class="description-text">Worked on automating machine configurations for servers in the cloud.</p>
             </div>
         </section>
         <section id="three" class="transition">
             <div class="center-content">
-                <img class="logo" src="img/cloud_raxak.png">
-                <h1 class="position-text">Cloud Raxak: Software Engineering Intern</h1>
-                <p class="description-text">Worked on automating machine configurations for servers in the cloud.</p>
+                <img class="logo" src="img/db-logo.png">
+                <h1 class="position-text">Daily Bruin: Director</h1>
+                <p class="description-text">Managed the Daily Bruin Online Department (50+ members)</p>
             </div>
         </section>
         <section id="four" class="transition">
@@ -43,14 +67,16 @@
         <section id="five" class="transition">
             <div class="center-content">
                 <img class="logo" src="img/IRI.jpg">
-                <h1 class="position-text">Internet Research Incubator: Prize Winner</h1>
-                <p class="description-text">Recipient of a $15,000 grant to pursue research related to the internet.</p>
+                <h1 class="position-text">Internet Research Incubator: Prize Recipient</h1>
+                <p class="description-text">Pursuing a self proposed research project relating to the internet.</p>
             </div>
         </section>
         <section id="six" class="transition">
             <div class="center-content">
                 <h1 class="position-text">Thanks for reading!</h1>
-                <p class="description-text">This was not intended to be an exhaustive description of everything I've done so heres my <br> resume <br> and feel free to reach me by <br> email</p>
+                <p class="description-text">Feel free to check out my
+                <a href="https://github.com/H-Huang">github</a>
+                <a href="resume/HowardHuangResume.pdf">resume</a>
             </div>
         </section>
         <!--Include Jquery-->
@@ -59,6 +85,10 @@
         <!-- Include ScrollMagic -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
+ 
+        <!-- GSAP -->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>-->
 
         <!-- Include main.js for our custom code -->
         <script src="js/main.js"></script>
