@@ -107,7 +107,7 @@ section {
 
 /* #993299 - purple */
 
-@media screen and (min-width: 300px) and (max-width: 700px) {
+@media screen and (min-width: 300px) and (max-width: 920px) {
 
   .logo {
     height: 128px;
