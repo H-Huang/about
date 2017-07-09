@@ -53,7 +53,6 @@
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
-  background: url(../img/iri.jpg) no-repeat;
 }
 
 /* Make each section 100% of the browser viewport height */
@@ -108,3 +107,59 @@ section {
 .is-active {background-color: #222222 !important;}
 
 /* #993299 - purple */
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+
+  .logo {
+    height: 64px;
+  }
+
+  .top-text {
+    margin: 1vh 2vw;
+    padding: 0px;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    opacity: 0;
+    font-size: 16px;
+  } 
+
+  .right-arrow {
+    fill: white;
+    margin: 0px 3vw;
+    height: 16px;
+    align-items: center;
+    justify-content: center
+  }
+
+  .position-text {
+    font-size: 16px;
+  }
+
+  section .center-content {
+    padding: 25vh 10vw 25vh 10vw;
+    align-items: center;
+    justify-content: center
+  }
+
+  .description-text {
+    font-size: 12px;
+  }
+
+  .top-text {
+    display: none;
+  }
+
+  .skills-header {
+    display: none;
+  }
+
+  .skills-text {
+    display: none;
+  }
+
+  .external-links {
+    font-size: 16px;
+  }
+
+}
