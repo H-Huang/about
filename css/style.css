@@ -5,7 +5,7 @@
   z-index: 1;
   color: white;
   opacity: 0;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .skills {
@@ -26,14 +26,34 @@
 }
 
 .final-skill {
-  font-size: 20px;
-  color: red;
+  font-size: 28px;
+  color: 	#7ddc1f;
 }
 
 .external-links {
-  color: orange;
+  color: 		#7ddc1f;
   font-style: normal;
   font-size: 22px;
+}
+
+.external-links:visited {
+  color: 		#7ddc1f;
+  font-style: normal;
+  font-size: 22px;
+}
+
+.external-links:hover {
+  font-style: normal;
+  color: 	#fdcf58;
+}
+
+.iri-logo {
+  width: 164px;
+	height: 164px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+  background: url(../img/iri.jpg) no-repeat;
 }
 
 /* Make each section 100% of the browser viewport height */
@@ -52,16 +72,38 @@ section {
   height: 164px;
 }
 
+.right-arrow {
+  fill: white;
+  margin: 0px 3vw;
+  height: 48px;
+  align-items: center;
+  justify-content: center
+}
+
+.introduction {
+  margin: 5vh 0vw;
+  font-size: 72px;
+}
+
+.description-text {
+  font-size: 20px;
+}
+
 .transition {
   transition: all 0.5s linear;
 }
+
+.position-title {
+  display: inline;
+  color: #ffff32;
+}
  
 /* Background colors for each section */
-#one { background-color: #6666ff; }
-#two { background-color: #44aaaa; }
-#three { background-color: #ff6666; }
-#four { background-color:  #005900; }
-#five { background-color: #12af36; }
+#one { background-color: #1b85b8; }
+#two { background-color: #bda040; }
+#three { background-color: #eb6841; }
+#four { background-color:  #6b2294; }
+#five { background-color: #cc2a36; }
 #six { background-color: #993299; }
 .is-active {background-color: #222222 !important;}
 

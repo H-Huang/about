@@ -24,26 +24,18 @@ $(document).ready(function() {
         new ScrollMagic.Scene({
             triggerElement: this
         })
-        .setPin(this)
-        .addIndicators({
-            colorStart: "rgba(255,255,255,0.5)",
-            colorEnd: "rgba(255,255,255,0.5)", 
-            colorTrigger : "rgba(255,255,255,1)",
-            name:name
-        })
         .addTo(ctrl);
     });
 
     // get window height
     var wh = window.innerHeight;
-    console.log(wh);
 
     // set all skills
-    var offset_vals = [.05*wh,         .05*wh,         .35*wh,         .65*wh,         
-                       .8*wh,          1.3*wh,        
-                       1.5*wh,         1.8*wh,         2.05*wh,    2.15*wh,        2.2*wh,          2.25*wh,       
-                       2.8*wh,         2.95*wh,        3.1*wh,     
-                       3.8*wh,         3.9*wh,         4.05*wh,
+    var offset_vals = [.05*wh,         .05*wh,         .05*wh,         .05*wh,         
+                       1*wh,        1*wh,        
+                       2*wh,        2*wh,        2*wh,    2*wh,        2*wh,          2*wh,       
+                       3*wh,        3*wh,        3*wh,     
+                       4*wh,        4*wh,        4*wh,
                        4.9*wh];
     var identifiers = ["#skills-header-text", "#first-skill", "#second-skill", "#third-skill", 
                        "#fourth-skill", "#fifth-skill", 
@@ -67,14 +59,14 @@ $(document).ready(function() {
     // "who i am"
     new ScrollMagic.Scene({
         offset: -1,
-        duration: .8*wh
+        duration: wh
     })
     .setClassToggle("#first-header", "fadeInLeft")
     .addTo(ctrl);
 
     // "what i've done"
     new ScrollMagic.Scene({
-        offset: wh - .2*wh,
+        offset: wh-1,
         duration: 2*wh
     })
     .setClassToggle("#second-header", "fadeInLeft")
@@ -82,7 +74,7 @@ $(document).ready(function() {
 
     // "what i'm doing"
     new ScrollMagic.Scene({
-        offset: 3*wh - .2*wh,
+        offset: 3*wh-1,
         duration: 2*wh
     })
     .setClassToggle("#third-header", "fadeInLeft")
@@ -90,7 +82,7 @@ $(document).ready(function() {
 
     // "how to reach me"
     new ScrollMagic.Scene({
-        offset: 5*wh - 1
+        offset: 5*wh-1
     })
     .setClassToggle("#six", "is-active")
     .addTo(ctrl);
