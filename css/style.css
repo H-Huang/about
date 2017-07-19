@@ -100,7 +100,7 @@ section {
  
 /* Background colors for each section */
 #one { background-color: #1b85b8; }
-#two { background-color: #bda040; }
+#two { background-color: #80ab90; }
 #three { background-color: #eb6841; }
 #four { background-color:  #6b2294; }
 #five { background-color: #cc2a36; }
@@ -167,4 +167,14 @@ section {
     font-size: 16px;
   }
 
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .logo {
+    height: 88px;
+  }
+
+  .iri-logo {
+    height: 88px;
+  }
 }
