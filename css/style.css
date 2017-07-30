@@ -45,6 +45,7 @@
 }
 
 .external-links:hover {
+  text-decoration: none;
   font-style: normal;
   color: 	#fdcf58;
 }
@@ -74,15 +75,15 @@ section {
 
 .right-arrow {
   fill: white;
-  margin: 0px 3vw;
+  margin: 0px 1vw;
   height: 48px;
   align-items: center;
   justify-content: center
 }
 
 .introduction {
-  margin: 5vh 0vw;
-  font-size: 72px;
+  margin: 3vh 0vw;
+  font-size: 64px;
 }
 
 .description-text {
@@ -97,7 +98,34 @@ section {
   display: inline;
   color: #ffff32;
 }
+
+.highlight-text {
+  color: #ffff32;
+}
+
+.profile-pic {
+  height: 210px;
+}
+
+.extra-info-logo {
+  height: 24px;
+  fill: #7ddc1f;
+}
+
+.rounded {
+  border-radius: 15px;
+}
  
+footer {
+  font-size: 11px;
+  color: gray;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:40px;   /* Height of the footer */
+}
+
 /* Background colors for each section */
 #one { background-color: #1b85b8; }
 #two { background-color: #80ab90; }
@@ -109,7 +137,12 @@ section {
 
 /* #993299 - purple */
 
-@media screen and (min-width: 300px) and (max-width: 920px) {
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+
+  .profile-pic 
+  {
+    height: 180px;
+  }
 
   .logo {
     height: 128px;
@@ -131,7 +164,7 @@ section {
 
   .right-arrow {
     fill: white;
-    margin: 0px 3vw;
+    margin: 0px 1vw;
     height: 16px;
     align-items: center;
     justify-content: center
@@ -170,6 +203,11 @@ section {
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
+  .profile-pic 
+  {
+    height: 120px;
+  }
+
   .logo {
     height: 88px;
   }
